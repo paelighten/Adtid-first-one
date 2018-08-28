@@ -1,0 +1,137 @@
+<nav class="nav-bar custom-navbar d-none d-md-block">
+  <div class="section-wrapper">
+    <div class="row first-row">
+      <div class="col-1">
+        <span class="custom-navbar-btn">logo</span>
+      </div>
+      <div class="col p-0 search-input-ctn">
+        <input type="text" placeholder="ค้นหา" class="form-control custom-input" aria-label="Small">
+        <span class="oi oi-magnifying-glass custom-input-icon"></span>
+      </div>
+      <div class="col-2 p-0 custom-navbar-btn" >
+        <span class="">ตั้งเป้าหมาย</span>
+      </div>
+      <div class="col-2 p-0 custom-navbar-btn">
+        <span class="">สมัครสอบ Adtid</span>
+      </div>
+      <div class="col-2 p-0 custom-navbar-btn" *ngIf="isLogedin">
+        <span class="">แจ้งเตือน</span>
+      </div>
+      <div class="col-2 p-0 custom-navbar-btn" (click)="loginAction()" *ngIf="!isLogedin">
+        <span class=" login-btn">เข้าสู่ระบบ</span>
+      </div>
+      <div class="col-2 p-0 custom-navbar-btn" *ngIf="isLogedin" id="dropdownUserMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <div class="dropdown">
+            <span class="oi oi-person username-icon"></span>
+            <span class="dropdown-toggle">username</span>
+        </div>
+        <div class="dropdown-menu dropdown-user-menu" aria-labelledby="dropdownUserMenu">
+          <div class="row m-0">
+            <div class="col-12 user-dropdown-header">ภาพรวมบัญชี</div>
+            <div class="col-12 user-drowpdown-body">ข้อมูลนักเรียน</div>
+            <div class="col-12 user-drowpdown-body">ข้อมูลการสอบ</div>
+            <div class="col-12 user-drowpdown-body">ตั้งเป้าหมายคณะ</div>
+            <div class="col-12 user-drowpdown-body">ประวัติการชำระเงิน</div>
+            <div class="col-12 user-drowpdown-body">ตั้งค่าโปรไฟล์</div>
+            <div class="col-12 user-drowpdown-body">ออกจากระบบ</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row submenu mt-2">
+      <div class="col p-0">
+        <span class="custom-navbar-btn">เกี่ยวกับ ADTID</span>
+      </div>
+      <div class="col p-0 custom-dropdown-btn" id="dropdownTcaMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="custom-navbar-btn dropdown-toggle">
+          สอบ TCAS 62
+        </span>
+        <div class="dropdown-menu tcas-dropdown" aria-labelledby="dropdownTcaMenu">
+          <div class="row px-3">
+            <div class="col-6"><span>สมัครสอบ</span></div>
+            <div class="col-6"><span>ประกาศผลสอบ</span></div>
+          </div>
+          <div class="row  px-3">
+            <div class="col-6"><span>ห้องสอบออนไลน์</span></div>
+            <div class="col-6"><span>ประกาศ TOP 10</span></div>
+          </div>
+          <div class="row  px-3">
+            <div class="col-6"><span>ชั้นตอนการทดสอบออนไลน์</span></div>
+            <div class="col-6"><span>ประวัติการสอบ</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="col p-0">
+        <span class="custom-navbar-btn">เกติกาและเงื่อนไข</span>
+      </div>
+      <div class="col p-0">
+        <span class="custom-navbar-btn">ข่าวและประกาศ</span>
+      </div>
+      <div class="col p-0">
+        <span class="custom-navbar-btn">ผู้ออกข้อสอบ</span>
+      </div>
+      <div class="col p-0">
+        <span class="custom-navbar-btn">ช่วยเหลือ</span>
+      </div>
+      <div class="col p-0">
+        <span class="custom-navbar-btn">ติดต่อเรา</span>
+      </div>
+    </div>
+  </div>
+</nav>
+<nav class="nav-bar custom-navbar-mobile navbar-expand-md d-block d-md-none">
+  <a class="navbar-brand" href="#">Adtid</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMobile" aria-controls="navbarMobile"
+    aria-expanded="false">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse custom-collapse-item" id="navbarMobile">
+    <ul class="custom-navbar-nav">
+      <li>หน้าแรก</li>
+    </ul>
+    <ul class="custom-navbar-nav">
+      <li>เข้าสู่ระบบ</li>
+      <li>สมัครสมาชิก</li>
+      <li>ตั้งเป้าหมายคณะ</li>
+    </ul>
+    <ul class="custom-navbar-nav">
+      <li>สมัครสอบ</li>
+      <li>ขั้นตอนการสอบออนไลน์</li>
+      <li>ประกาศ TOP 10</li>
+    </ul>
+    <ul class="custom-navbar-nav">
+      <li>กติกาและเงื่อนไข</li>
+      <li>ข่าว / ประกาศ</li>
+      <li>ผู้ออกสอบ</li>
+      <li>ช่วยเหลือ</li>
+      <li>เกี่ยวกับ AD'TID</li>
+    </ul>
+    <ul class="custom-navbar-footer">
+      <li>ติดต่อเรา</li>
+      <li>นโยบายความเป็นส่วนตัว</li>
+      <li>เงื่อนไขข้อตกลงการใช้บริการ</li>
+    </ul>
+    <!-- <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul> -->
+  </div>
+</nav>

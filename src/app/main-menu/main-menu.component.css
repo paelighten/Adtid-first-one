@@ -1,0 +1,130 @@
+.custom-navbar {
+    padding:0 10%;
+    text-align: center;
+    background-image: linear-gradient(to right, #ef4137, #f15a29);
+    color: #ffffff;
+    padding-top: 1em;
+}
+
+.custom-navbar-mobile {
+    background-image: linear-gradient(to right, #ef4137, #f15a29);
+    color: #ffffff;
+    padding-top: 1em;
+}
+
+.custom-navbar .custom-navbar-btn {
+    line-height: 3em;
+}
+
+.custom-navbar-btn:hover {
+    background-color: #FF6633;
+}
+
+.username-icon {
+    padding: 0.5em;
+    margin-right: 0.5em;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.custom-navbar .login-btn {
+    padding: 0.25em 1em;
+    border : 1px solid #ffffff;
+    border-radius: 0.25em;
+    cursor: pointer;
+}
+
+.custom-input {
+    height: 2em;
+    margin-top: 0.5em;
+    border-radius: 1em;
+    border:none;
+}
+.submenu span, .tcas-dropdown span {
+    font-size: 0.8rem;
+}
+
+.submenu {
+    max-width: 50em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tcas-dropdown{
+    min-width: 22em;
+    border-radius: 0;
+    border: none;
+    top: -2px !important;
+}
+
+.show .custom-dropdown-btn {
+    background-color: #fff;
+    color: #000;
+}
+
+.custom-navbar-nav, .custom-navbar-footer {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding :0.5em 1em;
+    border-bottom: 1px solid #eeefef;
+    background-color: #ffffff;
+    margin: 0;
+    color: #000000;
+}
+
+.custom-navbar-footer {
+    background-image: linear-gradient(to right, #ef4137, #f15a29);
+    color: #ffffff;
+    border-bottom: none;
+}
+
+.custom-navbar-nav li, .custom-navbar-footer li {
+    line-height: 2em;
+}
+
+.custom-collapse-item {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+
+.custom-input-icon {
+    position: absolute;
+    top : 50%;
+    transform: translate(0, -50%);
+    right: 0.5em;
+    color: #f15a29;
+}
+
+.section-wrapper {
+    max-width: 70em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dropdown-user-menu {
+    padding: 0;
+    border:none;
+    left: -8em !important;
+}
+
+.user-dropdown-header {
+    line-height: 4em;
+    background-color: #FF6633;
+    color: #fff;
+}
+
+.user-drowpdown-body {
+    line-height: 2.5em;
+}
+
+.user-drowpdown-body:last-child {
+    border-top:1px solid #acacac;
+}
+
+@media screen and (max-width: 850px) {
+    .custom-navbar {
+        padding: 0 5%;
+    }
+}
